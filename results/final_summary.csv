@@ -1,0 +1,7 @@
+project,contamination_type,n_unique_math500,n_total_pairs,judge_precision,notes
+s1,C_lex,135,484,N/A (lexical),n-gram n=8
+s1,C_sem,1,1,10%,10 pairs judged
+tulu,C_lex,17,53,N/A (lexical),n-gram n=8
+tulu,C_sem,29,56,38%,147 pairs judged
+openthoughts,C_lex,81,354,N/A (lexical),n-gram n=13
+openthoughts,C_sem,17,18,18%,100 pairs judged

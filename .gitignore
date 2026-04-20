@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Large data files
+data/*.jsonl
+data/output/*.jsonl
+
+# Embedding cache
+results/embedding_candidates/*.npy
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
