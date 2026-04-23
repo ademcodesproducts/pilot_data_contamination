@@ -1,7 +1,7 @@
-project,contamination_type,n_unique_math500,n_total_pairs,judge_precision,notes
-s1,C_lex,135,484,N/A (lexical),n-gram n=8
-s1,C_sem,1,1,10%,10 pairs judged
-tulu,C_lex,17,53,N/A (lexical),n-gram n=8
-tulu,C_sem,29,56,38%,147 pairs judged
-openthoughts,C_lex,81,354,N/A (lexical),n-gram n=13
-openthoughts,C_sem,17,18,18%,100 pairs judged
+project,train_size,contamination_type,n_unique_math500,n_lex_strict_10,n_lex_raw_1,rate_pct,judge_precision,threshold_ngrams,notes
+s1,1000,C_lex,36,13,135,7.2,N/A (lexical),5,n-gram n=8
+s1,1000,C_sem,1,,,0.2,10%,,10 pairs judged
+tulu,334000,C_lex,15,14,17,3.0,N/A (lexical),5,n-gram n=8
+tulu,334000,C_sem,29,,,5.8,38%,,147 pairs judged
+openthoughts,114000,C_lex,93,42,162,18.6,N/A (lexical),5,n-gram n=13
+openthoughts,114000,C_sem,42,,,8.4,28%,,200 pairs judged

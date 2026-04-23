@@ -1,0 +1,17 @@
+Robustness Check: OpenThoughts C_lex across n-gram thresholds
+=================================================================
+  Dataset: OpenThoughts-114K  |  Min shared n-grams: >=5
+  Benchmark: MATH-500 (500 items)
+
+   n-gram size    Raw hits    Filtered (>=5)  % MATH-500
+  -------------------------------------------------------
+            13         162                93       18.6%
+            15         123                65       13.0%
+            20          51                32        6.4%
+
+  Interpretation:
+    C_lex contamination persists across all threshold choices.
+    n=15 retains 70% of n=13 contaminated items (65 of 93).
+    n=20 retains 34% of n=13 contaminated items (32 of 93).
+    The trend is stable: stricter thresholds reduce noise but do not
+    eliminate the contamination signal.

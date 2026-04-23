@@ -1,0 +1,22 @@
+Cross-Dataset Failure Mode Comparison
+==========================================================================================
+Dataset        Filter                          C_lex%         95% CI  C_sem%         95% CI  Total% Mode              
+------------------------------------------------------------------------------------------
+s1             8-gram, any overlap               7.2%     [5.0, 9.6]    0.2%     [0.0, 0.6]    7.4% C_lex dominant    
+tulu           8-gram, >50% token coverage       3.0%     [1.6, 4.6]    5.8%     [3.8, 8.0]    8.8% mixed             
+openthoughts   13-gram, any overlap             18.6%   [15.2, 22.0]    8.4%    [6.0, 11.0]   24.6% C_lex dominant    
+
+Contamination share breakdown (% of total contaminated items per dataset):
+Dataset         C_lex share  C_sem share Interpretation
+----------------------------------------------------------------------
+s1                    97.3%         2.7%   filter bug dominates
+tulu                  34.1%        65.9%   both failure modes active
+openthoughts          75.6%        34.1%   filter bug dominates
+
+Key insight:
+  Tulu uses the strictest lexical filter (50% token coverage) and shows the lowest
+  C_lex rate (3.0%) but the highest C_sem rate (5.8%) relative to its filter strength.
+  OpenThoughts has the highest total contamination (27.0%) despite a stricter 13-gram
+  threshold than s1, suggesting filter n does not scale linearly with dataset size.
+  s1 shows C_lex dominance (36 vs 1), consistent with an implementation bug:
+  the filter ran on a different text representation than what was released.

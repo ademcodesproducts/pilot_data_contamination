@@ -1,0 +1,15 @@
+Tulu Contamination by Source
+==================================================================================
+Source                     Size  C_lex  C_lex%  C_sem  C_sem%  Total   Tot%
+----------------------------------------------------------------------------------
+PersonaHub-Math         149,960      1    0.2%      0    0.0%      1   0.2%
+NuminaMath-TIR           64,312     14    2.8%     28    5.6%     42   8.4%
+GSM8K                    50,000      0    0.0%      0    0.0%      0   0.0%
+PersonaHub-Grade         49,980      0    0.0%      1    0.2%      1   0.2%
+PersonaHub-Algebra       20,000      0    0.0%      0    0.0%      0   0.0%
+----------------------------------------------------------------------------------
+ALL SOURCES             334,252     15    3.0%     29    5.8%     44   8.8%
+
+Note: C_lex and C_sem count unique MATH-500 items affected (out of 500 total).
+      A single source may affect the same MATH-500 item multiple times;
+      source totals can exceed the dataset total due to de-duplication across sources.

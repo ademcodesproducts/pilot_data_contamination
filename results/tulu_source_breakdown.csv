@@ -1,0 +1,6 @@
+source,label,train_size,n_lex,n_sem,n_total,pct_lex,pct_sem,pct_total
+ai2-adapt-dev/personahub_math_v5_regen_149960,PersonaHub-Math,149960,1,0,1,0.2,0.0,0.2
+ai2-adapt-dev/numinamath_tir_math_decontaminated,NuminaMath-TIR,64312,14,28,42,2.8,5.6,8.4
+ai2-adapt-dev/tulu_v3.9_open_math_2_gsm8k_50k,GSM8K,50000,0,0,0,0.0,0.0,0.0
+allenai/tulu-3-sft-personas-math-grade,PersonaHub-Grade,49980,0,1,1,0.0,0.2,0.2
+ai2-adapt-dev/tulu_v3.9_personahub_math_interm_algebra_20k,PersonaHub-Algebra,20000,0,0,0,0.0,0.0,0.0
